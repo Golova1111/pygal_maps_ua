@@ -1,9 +1,11 @@
 # pygal_maps_ua
 ### Ukraine maps for pygal
 
-[🇺🇦 **Читати українською**](./README_ua.md)
+[🇺🇦 **Читати українською**](https://github.com/Golova1111/pygal_maps_ua/blob/master/README_ua.md)
 
-This package provides map for administrative first level division of Ukraine
+Ukraine map plugin for [Pygal](https://www.pygal.org/en/stable/) 
+
+Allows you to create first level division administrative map of Ukraine
 
 At the first level Ukraine is divided into **27** regions: **24** oblasts (regions), **1** autonomous republic (Crimea) and **2** cities with special status (Kyiv, Sevastopol)
 
@@ -14,6 +16,9 @@ pip install pygal_maps_ua
 ```
 
 ## Usage
+
+This package is a plugin for an open-source data visualization library Pygal, so please refer the [Pygal](https://www.pygal.org/en/stable/) and [Pygal / Chart types / Maps](https://www.pygal.org/en/stable/documentation/types/maps/index.html) documentation for deeper understanding of the code below
+
 ```python
 from pygal.maps.ua import Regions
 
@@ -28,7 +33,7 @@ map.render_to_png('chart.png')
 
 Result:
 
-![alt text](img/map1.png)
+![alt text](https://i.imgur.com/oCo763x.png)
 
 You can also specify a value for the region
 
@@ -47,7 +52,7 @@ map.render_to_png('chart.png')
 
 Result:
 
-![alt text](img/map2.png)
+![alt text](https://i.imgur.com/N2pGMYb.png)
 
 ## Temporarily occupied territories
 
@@ -116,7 +121,7 @@ map.render_to_png('chart.png')
 
 Result:
 
-![alt text](img/map3.png)
+![alt text](https://i.imgur.com/vW5yVRH.png)
 
 
 ## List of available regions

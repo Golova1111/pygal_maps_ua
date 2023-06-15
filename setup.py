@@ -22,22 +22,27 @@
 from setuptools import setup, find_packages
 
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
+
 setup(
     name="pygal_maps_ua",
-    version='1.0.0',
-    description="Ukraine maps for pygal",
+    version='1.0.2',
     author="Vadym Holovashchenko",
+    description="Ukraine maps for pygal",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     url="http://github.com/Golova1111/pygal_maps_ua",
     author_email="vadym.holovashchenko@gmail.com",
     license="GNU LGPL v3+",
     platforms="Any",
     packages=find_packages(),
     provides=['pygal_maps_ua'],
-    readme="README.md",
     keywords=[
-        "svg", "chart", "graph", "maps", "ukraine"
+        "svg", "chart", "graph", "maps", "ukraine", "pygal"
     ],
-    package_data={'pygal_maps_ua': ['*.svg']},
+    package_data={'pygal_maps_ua': ['*.Svg']},
     install_requires=["pygal>=1.9.9"],
 
     entry_points={
